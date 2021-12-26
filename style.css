@@ -1,0 +1,169 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+:root  {
+  --lg-text: 3rem;
+  --md-text: 1.8rem;
+  --sm-text: .75rem;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;    
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    display: block;
+    width: 80%;
+    max-width: 345px;
+    border-radius: 20px;
+    margin: 6em auto;
+    padding: 2em;
+    background-color: hsl(216, 50%, 16%);
+
+}
+
+.image {
+    display: block;   
+    width: 100%;
+    margin: auto;
+    cursor: pointer;     
+}
+
+
+
+.image-hover { 
+    display: none;    
+    position: absolute;
+    top:205px; 
+    right: calc(50% - 25px);      
+}
+
+
+
+.overlay-hover {  
+    display: none;   
+    width: 305px;
+    height: 305px;    
+    position: absolute;
+    top: 80px;   
+    background-color: hsl(178, 100%, 50%);;
+    opacity: .3; 
+    z-index: 2; 
+    cursor: pointer;
+    
+}
+.image:hover + .overlay-hover {
+    display: block;
+
+}
+
+.overlay-hover:hover {
+    display: block;
+}
+
+.overlay-hover:hover + .image-hover {
+    display: block;
+}
+
+
+
+
+
+.header-text {
+    font-size: var(--lg-text);
+    color: #fff;
+}
+
+.header-text:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+
+
+.small-text {
+    font-size: var(--md-text);
+    color: hsl(215, 51%, 70%);
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexA {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+
+
+.time {
+    margin-left: .5em;
+    font-size: var(--md-text);
+    color: hsl(178, 100%, 50%);
+}
+
+.flexB {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+
+
+.clock-text {
+    margin-left: .5em;
+    font-size: var(--md-text);
+    color: hsl(215, 51%, 70%);
+
+}
+
+.break {
+    color: hsl(215, 32%, 27%)
+}
+
+.flex-container2 {
+    display: flex;
+    margin-top: 1.5em;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatar {
+    width: 10%;
+}
+
+.creation-text {
+    font-size: var(--md-text);
+    margin-left: .5em;
+    color: #fff;
+}
+
+.creation-text:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.add-on {
+    color: hsl(215, 51%, 70%);;
+}
+
+.add-on:hover {
+    cursor:default ;
+}
