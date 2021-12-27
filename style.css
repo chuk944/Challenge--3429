@@ -2,15 +2,19 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300&display=swap');
+
 html {
     font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
 
 }
 
 :root  {
   --lg-text: 3rem;
   --md-text: 1.8rem;
-  --sm-text: .75rem;
+  --sm-text: 1.2rem;
 }
 
 
@@ -58,7 +62,7 @@ body {
     top: 80px;   
     background-color: hsl(178, 100%, 50%);;
     opacity: .3; 
-    z-index: 2; 
+    z-index: 1;     
     cursor: pointer;
     
 }
@@ -81,6 +85,7 @@ body {
 
 .header-text {
     font-size: var(--lg-text);
+    font-weight: 100;
     color: #fff;
 }
 
@@ -115,6 +120,7 @@ body {
 .time {
     margin-left: .5em;
     font-size: var(--md-text);
+    font-weight: 200;
     color: hsl(178, 100%, 50%);
 }
 
@@ -130,6 +136,7 @@ body {
 .clock-text {
     margin-left: .5em;
     font-size: var(--md-text);
+    font-weight: 200;
     color: hsl(215, 51%, 70%);
 
 }
